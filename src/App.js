@@ -172,12 +172,12 @@ function App() {
         <div id="section-3">
           <Tabs defaultActiveKey="design" id="uncontrolled-tab-example">
             <Tab eventKey="design" title="Design" className="design">
-              <img src={Design} />
-              <h2>Design</h2>
-              <p>
-                A costura com padrão hexagonal da Rhino complementa o estilo
-                racing com um toque refinado.
-              </p>
+                <img src={Design} />
+                <h2>Design</h2>
+                <p>
+                  A costura com padrão hexagonal da Rhino complementa o estilo
+                  racing com um toque refinado.
+                </p>
             </Tab>
             <Tab
               eventKey="construção"
@@ -303,12 +303,12 @@ function App() {
       <footer id="footer">
         <div className="redes-sociais">
           <div className="redes-sociais-texto">
-            <h2>Siga-nos nas redes sociais</h2>
-            <h3>
+            <h3>Siga-nos nas redes sociais</h3>
+            <h4>
               Publicamos constantemente nas nossas redes sociais promoções,
               atualizações de produto, lançamentos, eventos e outras coisas
               incríveis!
-            </h3>
+            </h4>
           </div>
           <div className="redes-sociais-icons">
             <img src={Facebook} />

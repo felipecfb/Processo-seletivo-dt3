@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .hotsite {
@@ -151,6 +151,7 @@
 
 .nav-tabs .nav-link {
   color: #fff;
+  margin-bottom: 0 !important;
 }
 
 .nav-tabs .nav-link:hover {
@@ -282,11 +283,15 @@
 }
 
 .redes-sociais-icons img {
-  width: 50px;
+  width: 35px;
   margin: 0 15px;
 }
 
 .redes-sociais-icons {
   margin: 0 15px;
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: normal !important;
 }
