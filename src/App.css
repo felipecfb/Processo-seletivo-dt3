@@ -1,38 +1,292 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hotsite {
+    background-color: #1D1D1D;
+    height: 100%;
+}
+
+.navbar {
+  padding: 2em 150px !important;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar .logo img {
+  width: 175px;
+  cursor: pointer;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-size: larger;
+  margin: 0 20px;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  font-style: italic;
+}
+
+.navbar .nav-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #e90707;
+  text-decoration-thickness: 2.3px;
+  text-underline-position: under;
+  opacity: 1;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 9rem;
+}
+
+.section-1 .infos-cadeira {
+  margin-top: 4em;
+}
+
+.section-1 .infos-cadeira h2 {
+  color: #e90707;
+  margin-bottom: 0.5rem;
+}
+
+.section-1 .infos-cadeira h3 {
+  color: #ebebeb;
+  margin-bottom: 1rem;
+}
+
+.section-1 .infos-cadeira .rate img {
+  width: 100px;
+}
+
+.section-1 .infos-cadeira .description ul {
+  margin: 2rem 0 1rem 0;
+  padding: 0 1.1rem;
+  color: #ebebeb;
+}
+
+.section-1 .infos-cadeira .comprar {
+  margin-top: 3rem;
+}
+
+.section-1 .infos-cadeira .comprar .price h2 {
+  color: #ebebeb;
+  margin-bottom: 1rem;
+  letter-spacing: .3rem;
+}
+
+.section-1 .infos-cadeira .comprar a button {
+  padding: 1rem 2.2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #e90707;
+  color: #ebebeb;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.imagem-grande {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-inner {
+  padding: 40px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-inner img {
+  cursor: pointer;
+  margin: 0 10px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carousel-control-next, .carousel-control-prev {
+  display: none !important;
+}
+
+.section-2 img {
+  width: 100%;
+}
+
+.design {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.design img {
+  width: 100%;
+  z-index: 2;
+}
+
+.design h2, .design p {
+  z-index: 3;
+  position: relative;
+  top: -40vh;
+  left: 70vw;
+  color: #fff;
+  font-weight: bold;
+}
+
+.design p {
+  max-width: 450px;
+  font-size: 16px;
+}
+
+.nav-tabs {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-tabs .nav-link {
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-tabs .nav-link:hover {
+  color: #e90707;
+  border: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  background: transparent !important;
+  border: none !important;
+  color: #e90707 !important;
+}
+
+.construção {
+  padding: 0 4rem;
+  background-color: #fff;
+}
+
+.construção h1 {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.construção-texto {
+  max-width: 800px;
+  text-align: justify;
+}
+
+.construção-texto h2 {
+  margin-top: 4rem;
+  font-weight: 800;
+}
+
+.construção-infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.construção-infos img {
+  max-width: 900px;
+}
+
+.frog {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-align: justify;
+  align-items: center;
+  padding: 0 7rem;
+  background-color: #484748;
+}
+
+.frog-texto {
+  max-width: 650px;
+  margin-right: 2rem;
+}
+
+.frog-texto h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.frog-texto p {
+  font-size: 1rem;
+}
+
+.frog-video {
+  max-width: 400px;
+}
+
+.garantia img {
+  width: 100%;
+}
+
+.garantia-texto {
+  position: absolute;
+  left: 65vw;
+  top: 230vh
+}
+
+.garantia h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  max-width: 500px;
+}
+
+.garantia p {
+  margin: 0;
+}
+
+.especificações {
+  padding: 2rem 4rem;
+  background-color: #fff;
+}
+
+.especificações-imagens {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+
+.especificações img {
+  width: 500px;
+}
+
+.especificações-table {
+  margin: 2rem 0;
+  text-align: -webkit-center;
+}
+
+.especificações-table table {
+  max-width: 500px;
+}
+
+.redes-sociais {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 1rem 4rem;
+  align-items: center;
+}
+
+.redes-sociais-texto {
+  max-width: 800px;
+}
+
+.redes-sociais-icons img {
+  width: 50px;
+  margin: 0 15px;
+}
+
+.redes-sociais-icons {
+  margin: 0 15px;
+  font-size: 2rem;
 }
